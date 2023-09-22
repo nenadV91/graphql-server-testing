@@ -1,0 +1,21 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@apollo/server": "^4.9.3",
+    "@types/node": "^20.6.3",
+    "concurrently": "^8.2.1",
+    "graphql": "^16.8.1",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "compile-watch": "tsc -w",
+    "start-watch": "nodemon ./dist/index.js",
+    "dev": "concurrently \"yarn:compile-watch\" \"yarn:start-watch\""
+  }
+}

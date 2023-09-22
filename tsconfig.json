@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "rootDirs": ["src"],
+    "outDir": "dist",
+    "lib": ["es2020"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "types": ["node"],
+    "target": "es5",
+    "module": "commonjs"
+  }
+}
